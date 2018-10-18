@@ -1,23 +1,29 @@
-require 'watir'
-require 'json'
+require "open-uri"
+require "nokogiri"
+require "pry"
+require "json"
+require "dotenv"
 
-browser = Watir::Browser.new()
-browser.goto 'google.com'
-search_bar = browser.text_field(class: 'gsfi')
-search_bar.set("mairie nanterre + twitter")
 
-submit_button = browser.button(type:"button")
-submit_button.click
-twitters = Array.new
-search_result_divs = browser.divs(class:"r")
+Dotenv.load
 
-search_result_divs.each { |div| twitters << div.h3.text.split[1][1..-2] }
-p twitters[0]
 
-File.open("/home/irabespodobna/THP/week3/Jeudi/semaine3_THP/watir/array.json","w") do |f|
-f.write(twitters[0].to_json)
+require "twitter"
+
+scrap = Scrapper.new (@name_town_halls)
+
+@client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = ENV["TWITTER_API_KEY"]
+  config.consumer_secret     = ENV["TWITTER_API_SECRET"]
+  config.access_token        = ENV["TWITTER_TOKEN"]
+  config.access_token_secret = ENV["TWITTER_TOKEN_SECRET"]
 end
 
-sleep(3)
-p "Méfait accompli, fermeture du browser"
-browser.close
+@name_town_halls
+@handle = []
+
+#création des handle a partir des noms des villes
+@arr.each {|i| @handle << "@ville#{i}"}
+
+#follow de chacun des handle créés
+@handle.each { |i| @client.follow(i) }
