@@ -20,7 +20,7 @@ class Scrapper
     if number.is_a? Integer
       number = number.to_s
     elsif !number.is_a? String
-      puts "Tu n'as pas écrit un nombre de département Saligo !"
+      puts "Tu n'as pas écrit un numéro au bon format de département petit Saligo !"
       exit
     end
     page = Nokogiri::HTML(open(@accueil))
@@ -51,7 +51,7 @@ class Scrapper
         @email_town_hall = "No mail found"
       end
     end
-    p @email_town_hall
+    @email_town_hall
   end
 
 
@@ -73,7 +73,7 @@ class Scrapper
     url_town_hall
     # pour chacune des mairies, il récupère le nom et l'email de la mairie
     @town_halls.each { |i|
-      p get_name(i)
+      get_name(i)
       @municipalities[@name_town_hall] = get_mail(i)
     }
   end
