@@ -21,11 +21,11 @@ Voici comment se décompose notre dossier :
 Projet_Jeudi
 ├── .gitignore
 ├── .env (pas sur le répo GitHub, bien entendu 😉)
-├── README.md 				:coucou vous etes 'ici'
+├── README.md 					:coucou vous etes 'ici'
 ├── Gemfile								
-├── app.rb 				:lance le programme
+├── app.rb 					:lance le programme
 ├── data_base
-│   └── town_hall.json 			:fichier de datas
+│   └── town_hall.json 				:fichier de datas
 └── lib
     ├── app
     │   ├── json_scrapper.rb 			:inscrit les infos des mairies dans le .json
