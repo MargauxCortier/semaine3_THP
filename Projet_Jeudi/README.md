@@ -1,4 +1,4 @@
-# Projets validant du Jeudi 18 Octobre_semaine3_THP :collision: :collision:
+# Jeudi 18 Octobre_semaine3_THP :collision: :collision:
 
 
 ## La team :family: :
@@ -18,10 +18,10 @@ Victor Gabella | @Chartie :bear:
 Voici comment se décompose notre dossier :
 
 ```
-ultimate_townhall
+Projet_Jeudi
 ├── .gitignore
 ├── .env (pas sur le répo GitHub, bien entendu 😉)
-├── README.md 							:vous vous trouvez sur le README.md
+├── README.md 							:coucou vous etes 'ici'
 ├── Gemfile												
 ├── Gemfile.lock
 ├── app.rb 								:lance l'application
