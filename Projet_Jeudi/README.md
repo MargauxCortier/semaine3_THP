@@ -1,7 +1,7 @@
 # Projets validant du Jeudi 18 Octobre_semaine3_THP :collision: :collision:
 
 
-## La team :
+## La team :family: :
 
 Noms | Pseudo Slack
 ------------ | -------------
@@ -13,9 +13,9 @@ Hélène Martin | @Helene Cbm :panda_face:
 Victor Gabella | @Chartie :bear:
 
 
-## :floppy_disk: Pour commencer :floppy_disk: : 
+## :floppy_disk: Le programme :floppy_disk: : 
 
-Voici comment se decompose notre dossier 
+Voici comment se décompose notre dossier :
 
 ```
 ultimate_townhall
