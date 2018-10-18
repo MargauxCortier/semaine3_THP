@@ -93,7 +93,6 @@ end
     # scrappe les url de chacune des mairies des départements sélectionnés
     url_town_hall
     # pour chacune des mairies, il récupère le nom et l'email de la mairie
-    #get_all_the_town_halls_names
     @town_halls.each { |i|
       get_name(i)
       @municipalities[@name_town_hall] = get_mail(i)

@@ -14,7 +14,6 @@ require './library/app/json_scrapper.rb'
 require './library/app/mailer.rb'
 require './library/app/scrapper.rb'
 require './library/app/twitter.rb'
-#require './library/app/'
 require './library/views/index.rb'
 
 
