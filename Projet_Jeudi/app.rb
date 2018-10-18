@@ -18,19 +18,22 @@ require './library/app/twitter.rb'
 require './library/views/index.rb'
 
 
-def restart
-  puts 'Veux-tu recommencer ? ' "( #{'y'.green.bold} / #{'n'.red.bold} )"
+def restart_loop
+	puts
+	puts
+	puts
+  puts "Veux-tu recommencer avec d'autres départements ? " "( #{'O'.green.bold} / #{'n'.red.bold} )"
   print '> '
-  answer = gets.chomp.downcase
-  if answer == 'y'
+  if gets.chomp.to_s.downcase == 'o' 
     system('clear')
     Index.new.scrapping_town_hall
-    restart
+    restart_loop
   else
   	system('clear')
-    exit
+    exit 
   end
 end
 
+
 Index.new.scrapping_town_hall
-restart
+restart_loop
