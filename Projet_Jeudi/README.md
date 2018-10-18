@@ -22,19 +22,19 @@ Projet_Jeudi
 ├── .gitignore
 ├── .env (pas sur le répo GitHub, bien entendu 😉)
 ├── README.md 							:coucou vous etes 'ici'
-├── Gemfile												
-├── Gemfile.lock
-├── app.rb 								:lance l'application
+├── Gemfile								
+├── app.rb								:lance le programme
 ├── data_base
-│   └── town_hall.json
+│   └── town_hall.json 					:fichier de datas
 └── lib
     ├── app
     │   ├── json_scrapper.rb 			:inscrit les infos des mairies dans le .json
     │   ├── mailer.rb 					:envoie les emails
     │   ├── scrapper.rb 				:scrappe les infos des mairies
-    │ 
+    │ 	└── twitter.rb 					(:récupère tous les noms des mairies puis les follow)
+	│									pas fini pour cause de ban
     └── views
-        ├── index.rb
+        └── index.rb 					:fais l'interface entre tous les app
 ```
 
 1. En premier lieu veuiller lancer `$ bundle install` dans votre console.
