@@ -27,20 +27,20 @@ class Index
 
   def scrapping_town_hall
     puts"N'hésite pas à prendre un café, ça va être très loooooooooooong... (comme ma bite)"
-    #scrap = Scrapper.new (@url_acceuil)
-    #scrap.perform(@first)
+    scrap = Scrapper.new (@url_acceuil)
+    scrap.perform(@first)
 
     puts "Le scrapping des mairies du ".green + "#{@first.bold.cyan}" + " est terminé...1/3".green
 
-    #scrap.perform(@second)
+    scrap.perform(@second)
 
     puts "Le scrapping des mairies du ".green + "#{@second.bold.yellow}" + " est terminé...2/3".green
 
-    #scrap.perform(@third)
+    scrap.perform(@third)
 
     puts "Le scrapping des mairies du ".green + "#{@third.bold.magenta}" + " est terminé...3/3".green
     puts
-    #f = JsonScrapper.new(scrap.municipalities, @chemin_db).jsonw
+    f = JsonScrapper.new(scrap.municipalities, @chemin_db).jsonw
     results
     puts
     send_emails

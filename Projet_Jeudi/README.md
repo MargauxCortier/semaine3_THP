@@ -35,7 +35,7 @@ ultimate_townhall
     │ 
     └── views
         ├── index.rb
-        ```
+```
 
 1. En premier lieu veuiller lancer `$ bundle install` dans votre console.
 2. Ensuite veuillez lancer le programme `$ ruby app.rb`.
