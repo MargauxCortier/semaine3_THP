@@ -32,7 +32,7 @@ Projet_Jeudi
     │   ├── mailer.rb 					:envoie les emails
     │   ├── scrapper.rb 				:scrappe les infos des mairies
     │ 	└── twitter.rb 					(:récupère tous les noms des mairies puis les follow)
-	│									pas fini pour cause de ban
+    │								pas fini pour cause de ban
     └── views
         └── index.rb 					:fais l'interface entre tous les app
 ```
