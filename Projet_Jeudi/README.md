@@ -21,17 +21,17 @@ Voici comment se décompose notre dossier :
 ultimate_townhall
 ├── .gitignore
 ├── .env (pas sur le répo GitHub, bien entendu 😉)
-├── README.md 										:vous vous trouvez sur le README.md
+├── README.md 							:vous vous trouvez sur le README.md
 ├── Gemfile												
 ├── Gemfile.lock
-├── app.rb 											:lance l'application
+├── app.rb 								:lance l'application
 ├── data_base
 │   └── town_hall.json
 └── lib
     ├── app
-    │   ├── json_scrapper.rb 						:inscrit les infos des mairies dans le .json
-    │   ├── mailer.rb 								:envoie les emails
-    │   ├── scrapper.rb 							:scrappe les infos des mairies
+    │   ├── json_scrapper.rb 			:inscrit les infos des mairies dans le .json
+    │   ├── mailer.rb 					:envoie les emails
+    │   ├── scrapper.rb 				:scrappe les infos des mairies
     │ 
     └── views
         ├── index.rb
