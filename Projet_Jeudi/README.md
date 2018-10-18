@@ -39,6 +39,7 @@ ultimate_townhall
 
 1. En premier lieu veuiller lancer `$ bundle install` dans votre console.
 2. Ensuite veuillez lancer le programme `$ ruby app.rb`.
+3. :warning::warning: ne pas envoyer les mails :warning::warning:
 
 
 
