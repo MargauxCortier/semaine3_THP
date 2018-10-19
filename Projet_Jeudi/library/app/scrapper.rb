@@ -65,6 +65,27 @@ class Scrapper
     @name_town_hall
   end
 
+  def get_all_the_town_halls_names(page)
+    @name_town_halls = Array.new
+
+    url_town_halls = Nokogiri::HTML(open(page))
+    url_town_halls.xpath('//a[@class="lientxt"]').each do |node|
+      @name_town_halls << node.text.downcase.capitalize if node.values[1].include?('./94')
+  end
+
+    url_town_halls = Nokogiri::HTML(open(page))
+    url_town_halls.xpath('//a[@class="lientxt"]').each do |node|
+      @name_town_halls << node.text.downcase.capitalize if node.values[1].include?('./93')
+  end
+
+  url_town_halls = Nokogiri::HTML(open(page))
+  url_town_halls.xpath('//a[@class="lientxt"]').each do |node|
+    @name_town_halls << node.text.downcase.capitalize if node.values[1].include?('./92')
+  end
+
+  @name_town_halls
+end
+
 
   def perform(number)
     # récupère les url des départements que l'on a sélectionné
