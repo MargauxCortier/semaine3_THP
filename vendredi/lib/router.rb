@@ -1,6 +1,7 @@
 require 'controller'
 
 class Router
+  
   def initialize
     @controller =  Controller.new
   end

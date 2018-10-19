@@ -7,4 +7,6 @@ class Gossip
 	  @content = content
 	  @author = author
 	end
+end
 
+#Gossip.new(author, content)
